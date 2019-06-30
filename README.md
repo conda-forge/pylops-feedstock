@@ -9,12 +9,8 @@ Feedstock license: BSD 3-Clause
 
 Summary: PyLops – A Linear-Operator Library for Python
 
-This Python library is inspired by the MATLAB Spot – A Linear-Operator Toolbox project.
-
-Linear operators and inverse problems are at the core of many of the most used algorithms in signal processing,
-image processing, and remote sensing. When dealing with small-scale problems, the Python numerical scientific
-libraries numpy and scipy allow to perform many of the underlying matrix operations (e.g., computation of
-matrix-vector products and manipulation of matrices) in a simple and compact way.
+Python library implementing linear operators to allow solving large-scale optimization
+problems without requiring to explicitly create a dense (or sparse) matrix.
 
 
 Current build status
@@ -35,13 +31,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_python2.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6750&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pylops-feedstock?branchName=master&jobName=linux&configuration=linux_python2.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_python3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6750&branchName=master">
@@ -53,13 +42,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6750&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pylops-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python2.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6750&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pylops-feedstock?branchName=master&jobName=osx&configuration=osx_python2.7" alt="variant">
                 </a>
               </td>
             </tr><tr>

@@ -1,5 +1,5 @@
 {% set name = "pylops" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ea206fa39af39c42c75751fc935777b1c91db40d7d1f27160aaefd62ffec63e2
+  sha256: e9460fd2d147070cb508267a2a9ce11037c87e472e7ddb85d81c4d12f83ca282
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [win]
+  skip: True  # [win or py2k]
 
 requirements:
   build:
@@ -39,12 +39,8 @@ about:
   license_file: LICENSE
   summary: 'PyLops – A Linear-Operator Library for Python'
   description: |
-    This Python library is inspired by the MATLAB Spot – A Linear-Operator Toolbox project.
-
-    Linear operators and inverse problems are at the core of many of the most used algorithms in signal processing,
-    image processing, and remote sensing. When dealing with small-scale problems, the Python numerical scientific
-    libraries numpy and scipy allow to perform many of the underlying matrix operations (e.g., computation of
-    matrix-vector products and manipulation of matrices) in a simple and compact way.
+    Python library implementing linear operators to allow solving large-scale optimization
+    problems without requiring to explicitly create a dense (or sparse) matrix.
   doc_url: https://pylops.readthedocs.io
   dev_url: https://github.com/equinor/pylops
 
