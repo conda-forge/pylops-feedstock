@@ -1,5 +1,5 @@
 {% set name = "pylops" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 966e33dba76d368058c3402b18aaf0b72e183503b46afeb6f8465897f33aafdd
+  sha256: 81dd5cdc718c7819cba9bdc0383c374e1a8154d5db626b609a526cc14acdc458
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [py2k]
 
