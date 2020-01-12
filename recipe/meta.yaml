@@ -17,10 +17,10 @@ build:
 requirements:
   build:
       - {{ compiler('c') }}
-      - setuptools_scm 
   host:
     - python
     - pip
+    - setuptools_scm 
   run:
     - python
     - llvmlite
