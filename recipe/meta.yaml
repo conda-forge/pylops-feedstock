@@ -27,6 +27,7 @@ requirements:
     - llvmlite
     - numba
     - pyfftw
+    - pywavelets
     - scikit-fmm
     - scipy
 
