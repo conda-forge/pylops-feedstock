@@ -24,6 +24,7 @@ requirements:
     - pytest-runner
   run:
     - python
+    - pip
     - llvmlite
     - numba
     - pyfftw
