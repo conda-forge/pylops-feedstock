@@ -24,6 +24,7 @@ requirements:
     - pytest-runner
   run:
     - python
+    - pip
     - llvmlite
     - numba
     - pyfftw
@@ -34,6 +35,8 @@ requirements:
 test:
   imports:
     - pylops
+  commands:
+    - pip check
 
 about:
   home: https://github.com/equinor/pylops
