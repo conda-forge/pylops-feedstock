@@ -1,5 +1,5 @@
 {% set name = "pylops" %}
-{% set version = "1.9.1" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 121d3456047015c0d193328048099c13423802aa665593e1002c80813f04a379
+  sha256: a9ce5ad9a2c50dd2d93c6651b614404d35d60b1b4cf4e4c27dfd798361ba8121
 
 build:
   number: 0
