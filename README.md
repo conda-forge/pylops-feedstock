@@ -5,9 +5,13 @@ Home: https://github.com/equinor/pylops
 
 Package license: LGPL-3.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylops-feedstock/blob/master/LICENSE.txt)
 
 Summary: PyLops – A Linear-Operator Library for Python
+
+Development: https://github.com/equinor/pylops
+
+Documentation: https://pylops.readthedocs.io
 
 Python library implementing linear operators to allow solving large-scale optimization
 problems without requiring to explicitly create a dense (or sparse) matrix.
