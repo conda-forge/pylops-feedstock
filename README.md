@@ -1,7 +1,7 @@
 About pylops
 ============
 
-Home: https://github.com/equinor/pylops
+Home: https://github.com/PyLops/pylops
 
 Package license: LGPL-3.0
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylops-feedstoc
 
 Summary: PyLops – A Linear-Operator Library for Python
 
-Development: https://github.com/equinor/pylops
+Development: https://github.com/PyLops/pylops
 
 Documentation: https://pylops.readthedocs.io
 
