@@ -10,7 +10,7 @@ source:
   sha256: 87010358b1119ebe1f8a601b2768d16d7bd26d55bd0c91a6e83db763e5715f7c
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py2k]
 
@@ -39,7 +39,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/equinor/pylops
+  home: https://github.com/PyLops/pylops
   license: LGPL-3.0
   license_family: GPL
   license_file: LICENSE
@@ -48,7 +48,7 @@ about:
     Python library implementing linear operators to allow solving large-scale optimization
     problems without requiring to explicitly create a dense (or sparse) matrix.
   doc_url: https://pylops.readthedocs.io
-  dev_url: https://github.com/equinor/pylops
+  dev_url: https://github.com/PyLops/pylops
 
 extra:
   recipe-maintainers:
