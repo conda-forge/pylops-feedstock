@@ -6,39 +6,33 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylops-{{ version }}.tar.gz
   sha256: bcb3ba15f2b052b5fc369f1302ce5d1488310a59c3fa9a68b38675e957b147b1
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py2k]
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - {{ compiler('c') }}
   host:
-    - python
+    - python >=3.6
+    - setuptools >=65
+    - setuptools-scm
+    - wheel
     - pip
-    - setuptools_scm
-    - pytest-runner
   run:
-    - python
-    - pip
-    - llvmlite
-    - numba
-    - pyfftw
-    - pywavelets
-    - scikit-fmm
-    - scipy
+    - python >=3.6
+    - numpy >=1.21.0
+    - scipy >=1.4.0
 
 test:
   imports:
     - pylops
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/PyLops/pylops
