@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylops-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pylops-{{ version }}.tar.gz
   sha256: 1c4224523cec40ac73547975a77685ddbf48c16df5deba5b41cb5731c00711e1
 
 build:
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/PyLops/pylops
-  license: LGPL-3.0
+  license: LGPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: PyLops – A Linear-Operator Library for Python
