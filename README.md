@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylops-feedstoc
 
 Home: https://github.com/PyLops/pylops
 
-Package license: LGPL-3.0
+Package license: LGPL-3.0-or-later
 
 Summary: PyLops – A Linear-Operator Library for Python
 
