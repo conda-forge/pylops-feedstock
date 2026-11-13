@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pylops
-  version: "2.8.0"
+  version: 2.9.0
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pylops-${{ version }}.tar.gz
-  sha256: 7fb6a3e4c57f14059131aded722ae9c331c12f26075d7e7e98e4ec3915e1262c
+  sha256: 8cf028b6db3b9e2520d02ec75b7187346f2fd6788dc5079a9baba51d4b8a8f76
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -25,9 +25,8 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - numpy >=1.21.0
-    - scipy >=1.11.0
-
+    - numpy >=2.0.0
+    - scipy >=1.13.0
 tests:
   - python:
       imports:
@@ -35,7 +34,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}
-        - "*"
+        - '*'
 
 about:
   license: LGPL-3.0-or-later
